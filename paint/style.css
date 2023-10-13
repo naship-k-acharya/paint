@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: bold;
+    
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(56, 56, 130);
+
+}
+.container{
+    display: flex;
+    max-width: 1050px;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+
+}
+section{
+    
+    background-color: rgb(205, 213, 220);
+    border-radius: 7px;
+}
+
+.toolboard{
+    width: 210px;
+    padding: 15px 22px 0;
+}
+.row{
+    margin: 10px;
+    padding: 10px;
+}
+.row .options{
+    list-style: none;
+    
+}
+.option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.toolboard .row{
+    margin-bottom: 10px;
+}
+.row .color{
+    
+    margin-bottom: 10px;
+   
+}
+.color .option{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-flex;
+}
+.option:hover{
+    color: rgb(54, 54, 231);
+}
+.rowbtn button{
+    width: 100%;
+    color: rgb(229, 232, 239);
+    border: none;
+    outline:none ;
+   padding-top: 30px 0;
+   margin: 3px;
+   border-bottom: 1px solid black;
+   background-color: rgb(92, 92, 232);
+   cursor: pointer;
+}
+.rowbtn button:hover{
+    background-color: blue;
+}
+.color .option:nth-child(1){
+background: white;
+}
+.color .option:nth-child(2){
+background: black;
+}
+.color .option:nth-child(3){
+background: red;
+}
+.color .option:nth-child(4){
+background-color: blue;
+}
+.color .option:hover{
+    
+    transform: translate(-20%);
+}
+.drawing-area{
+    flex: 1;
+   
+}
+.drawing-area canvas{
+    width: 100%;
+    height: 100%;
+    
+}
